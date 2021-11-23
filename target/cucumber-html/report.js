@@ -19,7 +19,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "name": "User Enters username \"\u003cusername\u003e\"",
+  "name": "User Enters username \"\u003cUsername\u003e\"",
   "keyword": "When "
 });
 formatter.step({
@@ -41,7 +41,7 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "username",
+        "Username",
         "Password"
       ]
     },
@@ -129,11 +129,11 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "name": "User Enters  username \"\u003cusername\u003e\"",
+  "name": "User Enters username \"\u003cUserName\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "name": "User Enter  Password \"\u003cPassword\u003e\"",
+  "name": "User Enter Password \"\u003cPassword\u003e\"",
   "keyword": "And "
 });
 formatter.step({
@@ -151,7 +151,7 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "username",
+        "Username",
         "Password",
         "Error"
       ]
@@ -189,20 +189,24 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User Enters  username \"standard_user\"",
+  "name": "User Enters username \"\u003cUserName\u003e\"",
   "keyword": "When "
 });
-formatter.match({});
+formatter.match({
+  "location": "LoginTest.user_enters_username_something(String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
-  "name": "User Enter  Password \"secret_sauce12\"",
+  "name": "User Enter Password \"secret_sauce12\"",
   "keyword": "And "
 });
-formatter.match({});
+formatter.match({
+  "location": "LoginTest.user_enter_password_something(String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
   "name": "Clicks on Login Button",
@@ -212,7 +216,7 @@ formatter.match({
   "location": "LoginTest.clicks_on_login_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User Should get the \"Epic sadface: Username and password do not match any user in this service\"",
@@ -222,7 +226,7 @@ formatter.match({
   "location": "LoginTest.user_should_get_the_something(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
@@ -244,19 +248,19 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "name": "user should opened the swaglabs application",
+  "name": "User Opened Swag Lab Application",
   "keyword": "Given "
 });
 formatter.step({
-  "name": "user enters the \"\u003cUserName\u003e\"",
+  "name": "User Enters username \"\u003cUserName\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "name": "user enters the \"\u003cPassword\u003e\"",
+  "name": "User Enter Password \"\u003cPassword\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "name": "user click on the login Button",
+  "name": "Clicks on Login Button",
   "keyword": "And "
 });
 formatter.step({
@@ -302,36 +306,44 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user should opened the swaglabs application",
+  "name": "User Opened Swag Lab Application",
   "keyword": "Given "
 });
-formatter.match({});
+formatter.match({
+  "location": "LoginTest.user_opened_swag_lab_application()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user enters the \"standard_user\"",
+  "name": "User Enters username \"standard_user\"",
   "keyword": "When "
 });
-formatter.match({});
+formatter.match({
+  "location": "LoginTest.user_enters_username_something(String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user enters the \"secret_sauce\"",
+  "name": "User Enter Password \"secret_sauce\"",
   "keyword": "And "
 });
-formatter.match({});
+formatter.match({
+  "location": "LoginTest.user_enter_password_something(String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user click on the login Button",
+  "name": "Clicks on Login Button",
   "keyword": "And "
 });
-formatter.match({});
+formatter.match({
+  "location": "LoginTest.clicks_on_login_button()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
   "name": "user adds the product to the cart \"Sauce Labs Bike Light\"",
@@ -341,7 +353,7 @@ formatter.match({
   "location": "ProductAdd.user_adds_the_product_to_the_cart_something(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user can see the product added to the cart",
@@ -351,7 +363,7 @@ formatter.match({
   "location": "ProductAdd.user_can_see_the_product_added_to_the_cart()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"

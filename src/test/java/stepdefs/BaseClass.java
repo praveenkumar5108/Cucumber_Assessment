@@ -20,6 +20,8 @@ public class BaseClass {
 
 	@After
 	public void teardown() {
+		
+		driver.quit();
 	
 	}
 

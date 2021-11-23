@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-11-23T10:43:14.139Z",
+        "start_timestamp": "2021-11-23T14:36:49.090Z",
         "before": [
           {
             "result": {
-              "duration": 5934701400,
+              "duration": 4420087100,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 4817394200,
+              "duration": 931435500,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2534862500,
+              "duration": 1311477200,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 1014837500,
+              "duration": 510150000,
               "status": "passed"
             },
             "line": 6,
@@ -65,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 514955700,
+              "duration": 388288000,
               "status": "passed"
             },
             "line": 7,
@@ -83,7 +83,7 @@
           },
           {
             "result": {
-              "duration": 551329800,
+              "duration": 224405000,
               "status": "passed"
             },
             "line": 8,
@@ -95,7 +95,7 @@
           },
           {
             "result": {
-              "duration": 594700,
+              "duration": 526600,
               "status": "passed"
             },
             "line": 9,
@@ -113,11 +113,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-11-23T10:43:29.686Z",
+        "start_timestamp": "2021-11-23T14:36:57.118Z",
         "before": [
           {
             "result": {
-              "duration": 4138549500,
+              "duration": 3135943300,
               "status": "passed"
             },
             "match": {
@@ -132,7 +132,7 @@
         "after": [
           {
             "result": {
-              "duration": 4030569800,
+              "duration": 868673000,
               "status": "passed"
             },
             "match": {
@@ -145,7 +145,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1434665400,
+              "duration": 1380787500,
               "status": "passed"
             },
             "line": 16,
@@ -157,26 +157,44 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 501182400,
+              "status": "passed"
             },
             "line": 17,
-            "name": "User Enters  username \"standard_user\"",
-            "match": {},
+            "name": "User Enters username \"\u003cUserName\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cUserName\u003e",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginTest.user_enters_username_something(String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 545207500,
+              "status": "passed"
             },
             "line": 18,
-            "name": "User Enter  Password \"secret_sauce12\"",
-            "match": {},
+            "name": "User Enter Password \"secret_sauce12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "secret_sauce12",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginTest.user_enter_password_something(String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 813600,
-              "status": "skipped"
+              "duration": 128922900,
+              "status": "passed"
             },
             "line": 19,
             "name": "Clicks on Login Button",
@@ -187,8 +205,8 @@
           },
           {
             "result": {
-              "duration": 597300,
-              "status": "skipped"
+              "duration": 40893000,
+              "status": "passed"
             },
             "line": 20,
             "name": "User Should get the \"Epic sadface: Username and password do not match any user in this service\"",
@@ -231,11 +249,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-11-23T10:43:39.343Z",
+        "start_timestamp": "2021-11-23T14:37:03.729Z",
         "before": [
           {
             "result": {
-              "duration": 3964885200,
+              "duration": 2883315200,
               "status": "passed"
             },
             "match": {
@@ -250,7 +268,7 @@
         "after": [
           {
             "result": {
-              "duration": 2042507000,
+              "duration": 1337549800,
               "status": "passed"
             },
             "match": {
@@ -263,44 +281,68 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 1342150000,
+              "status": "passed"
             },
             "line": 5,
-            "name": "user should opened the swaglabs application",
-            "match": {},
+            "name": "User Opened Swag Lab Application",
+            "match": {
+              "location": "LoginTest.user_opened_swag_lab_application()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 411749800,
+              "status": "passed"
             },
             "line": 6,
-            "name": "user enters the \"standard_user\"",
-            "match": {},
+            "name": "User Enters username \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginTest.user_enters_username_something(String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 441494500,
+              "status": "passed"
             },
             "line": 7,
-            "name": "user enters the \"secret_sauce\"",
-            "match": {},
+            "name": "User Enter Password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "secret_sauce",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginTest.user_enter_password_something(String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 256569700,
+              "status": "passed"
             },
             "line": 8,
-            "name": "user click on the login Button",
-            "match": {},
+            "name": "Clicks on Login Button",
+            "match": {
+              "location": "LoginTest.clicks_on_login_button()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 403700,
-              "status": "skipped"
+              "duration": 122361700,
+              "status": "passed"
             },
             "line": 9,
             "name": "user adds the product to the cart \"Sauce Labs Bike Light\"",
@@ -317,8 +359,8 @@
           },
           {
             "result": {
-              "duration": 2443900,
-              "status": "skipped"
+              "duration": 46008300,
+              "status": "passed"
             },
             "line": 10,
             "name": "user can see the product added to the cart",

@@ -14,8 +14,8 @@ Feature: Login Test Feature
 
   Scenario Outline: Negative Login Test
     Given User Opened Swag Lab Application
-    When User Enters username  "<Username>"
-    And User Enter Password  "<Password>"
+    When User Enters username "<UserName>"
+    And User Enter Password "<Password>"
     And Clicks on Login Button
     Then User Should get the "<Error>"
 
