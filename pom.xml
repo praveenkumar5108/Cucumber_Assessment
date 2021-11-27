@@ -1,4 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+ <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>Cucumber_Assessment</groupId>
   <artifactId>Cucumber_Assessment</artifactId>
@@ -8,10 +8,13 @@
 
   <name>Cucumber_Assessment</name>
   <url>http://maven.apache.org</url>
-
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<cucumber.version>6.10.4</cucumber.version>
+	</properties>
 
   <dependencies>
   
@@ -48,9 +51,48 @@
 	    <artifactId>cucumber-jvm</artifactId>
 	    <version>4.5.4</version>
 	    <type>pom</type>
-	    
-	</dependency>
-   
-  </dependencies>
+	    </dependency>
+	 <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports-cucumber4-adapter -->
+    <dependency>
+        <groupId>com.aventstack</groupId>
+        <artifactId>extentreports-cucumber4-adapter</artifactId>
+        <version>1.0.8</version>
+    </dependency>
+    </dependencies>
   
+  <build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.7</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<version>3.0.0-M4</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>integration-test</goal>
+							<goal>verify</goal>
+						</goals>
+						<!-- <configuration> <parallel>methods</parallel> <threadCount>4</threadCount> 
+							<perCoreThreadCount>true</perCoreThreadCount> </configuration> -->
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+  
+
 </project>

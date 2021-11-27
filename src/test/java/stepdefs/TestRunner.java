@@ -9,11 +9,12 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(
-		monochrome=true,
-		plugin= {"pretty","html:target/cucumber-html","json:target/cucumber.json"},
-		features = "src/test/java/features",
-		tags= {"@LoginFeature,@Product"},
-		glue= {"stepdefs"}
+		//monochrome=true,
+		plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+		//plugin ={"pretty","html:target/cucumber-html","json:target/cucumber.json"},
+		features = "src/test/java/features"
+		//tags= {"@LoginFeature,@Product"},
+		//glue= {"stepdefs"}
 		)
 
 public class TestRunner {
